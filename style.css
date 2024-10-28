@@ -1,0 +1,469 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+header{
+    width: 100%;
+    height: 100%;
+}
+.topo{
+    height: 70px;
+    padding: 16px 156px 16px 140px;
+    gap: 10px;
+    opacity: 0px;
+    background: #02A28F;
+    color: #ffff;
+}
+.topo h1{
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 43.8px;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: #f0e8e8;
+}
+.coluna1{
+    width: 744px;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.coluna2{
+    width: 360px;
+    margin: 40px 0 20px 20px;
+}
+.imgTopo{
+    width: 744px;
+    height: 396px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 40px 0 25px 0;
+    border-radius: 10px;
+    background-image: url(./assets/teste.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+.imgTopo > div{
+    color: #ffff;
+    padding: 0 0 30px 20px;
+}
+.imgTopo span{
+    font-size: 1re;
+    font-weight: 400;
+    line-height: 19.5px;
+    color: rgba(255, 255, 255, 1);
+}
+.imgTopo h2{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 39.1px;
+    color: rgba(255, 255, 255, 1);
+}
+.imgTopo h3{
+    font-size: 1re;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: rgba(255, 255, 255, 1);
+}
+.cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tituloPoust{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 10px 5px;
+    border-radius: 12px;
+    background: #02A28F;
+    color: #ffff;
+}
+.tituloPoust > div{
+    width: 70%;
+}
+a{
+    width: 100%;
+    color: #ffff;
+}
+.card{
+    width: 360px;
+    height: 396px; 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px 5px  #d6d2d2;
+}
+.card > img{
+    width: 360px;
+    height: 191px;
+    border-radius: 16px 16px 0px 0px;
+    opacity: 0px;
+    object-fit: cover;
+}
+.card > div{
+    height: 100%;
+    padding: 0px 10px;
+}
+.card > div span{
+    width: 121px;
+    height: 17px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: #02A28F;
+}
+.card > div h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;  
+}
+.card > div h3{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: #616161;
+}
+.card > div p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 10px;
+}
+.grid{
+    width: 360px;
+    height: 96px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 12px;
+    margin-top: 15px; 
+    padding-right: 40px;  
+    box-shadow: 5px 5px 15px 5px  #d6d2d2;
+}
+.grid > img{
+    width: 132px;
+    height: 70px;
+    border-radius: 10px 0px 0px 0px;
+    margin: 10px 0 10px 10px;
+}
+.grid > div{
+    width: 100%;
+}
+.grid > div h3{
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 17.07px;
+    text-align: left;
+}
+.grid > div p{
+    font-size: 0.7rem;
+    font-weight: 500;
+    line-height: 14.63px;
+    text-align: left;
+}
+.kategori{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.kategori h3{
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 19.5px;
+    margin: 10px;
+    color: rgba(97, 97, 97, 1);
+}
+footer{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 17.7px;
+    text-align: center;
+    background: #02A28F;
+    color: #ffff;
+}
+
+@media only screen and (min-width: 1500px) and (max-width: 2560px){
+    .topo h1{
+        text-align: center;
+    }      
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+  
+    .cards{
+        justify-content: center;
+    }
+    .coluna2{
+        width: 60%;   
+        margin-left: 0;
+    }
+    .grid{
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+    
+    .topo{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .topo h1{
+        font-size: 1.5rem;
+    }
+    .imgTopo{
+        width: 100%;
+    }
+    .imgTopo > div{
+        color: #ffff;
+        text-align: left;
+        padding: 0 0 30px 20px;
+    }
+    .imgTopo span{
+        font-size: 1re;
+        font-weight: 400;
+        line-height: 19.5px;
+        color: rgba(255, 255, 255, 1);
+    }
+    .imgTopo > div h2{
+        font-size: 1.5rem;
+        font-weight: 700;
+        line-height: 29.26px;
+        color: rgba(255, 255, 255, 1);
+    }
+    .imgTopo h3{
+        font-size: 1re;
+        font-weight: 500;
+        line-height: 19.5px;
+        color: rgba(255, 255, 255, 1);
+    }
+    .tituloPoust > div{
+        text-align: left;
+    }
+    a{
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 17.07px;
+    }
+    .coluna1{
+        width: 100%;
+        margin-left: 0%;
+        padding: 0 20px;
+        text-align: center;
+
+    }
+    .coluna2{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: 10px;
+        padding: 0 20px;
+        text-align: center;
+        grid-auto-columns: 2fr;        
+    }
+    .coluna2 .tituloPoust h2{
+        width: 100%;
+        text-align: center;
+    }
+    .cards{
+        justify-content: center;
+    }
+    .card, .card > img{
+        width: 100%;
+    }
+    .card > div{
+        text-align: left;
+    }
+    .grid{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;        
+    }
+    .grid > img{
+        width: 134.5px;
+        height: 70px;
+        margin-right: 10px;
+    }
+    .grid > div h3{
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 17.07px;
+
+    }
+    .grid > div p{
+        font-size: 0.7rem;
+        font-weight: 700;
+        line-height: 17.07px;
+    }
+}    
+
+@media only screen and (max-width: 320px){
+    .grid{
+        width: 100%;
+        padding: 0 10px 0 10px;
+    }
+    .grid > img{
+        width: 90px;
+        height: 50px;
+        margin-right: 10px;
+    }
+    .grid > div h3{
+        font-size: 0.7rem;
+        font-weight: 500;
+    }
+    .grid > div p{
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    width: 1440px;
+    height: 100%;
+    font-size: 16px;
+}
+a{
+    color: #ffff;
+    border: 2px solid red;
+}
+.topo{
+    width: 1440px;
+    height: Fixed 70px;
+    padding: 16px 156px 16px 156px;
+    gap: 10px;
+    opacity: 0px;
+    background: #02A28F;
+    color: #ffff;
+}
+.topo > h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 43.8px;
+}
+.imgTopo{
+    width: 744px;
+    height: 396px;
+    background-image: url(./assets/imgTopo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 50px  0 0 130px;
+}
+.cards{
+    width: 744px;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 50px 0 50px 130px;
+}
+.cards > nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px 10px 50px;
+    border-radius: 12px;
+}
+.card{
+    width: 360px;
+    height: 396px; 
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border: 2px solid rgb(42, 52, 54);
+}
+.card > img{
+    width: 360px;
+    height: 191px;
+    gap: 0px;
+    border-radius: 16px 16px 0px 0px;
+    opacity: 0px;
+}
+.card > span{
+    width: 121px;
+    height: 17px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    color: #02A28F;
+}
+.card > h2{
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;  
+}
+.card > h3{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    color: #616161;
+}
+.card > p{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+footer {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 17.7px;
+    text-align: center;
+}
+
+
+  */
